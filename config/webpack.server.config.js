@@ -7,7 +7,6 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '../build')
   },
-
   module: {
     rules: [{
       test: /\.js?$/,
@@ -15,6 +14,7 @@ module.exports = {
       exclude: /node_modules/,
       options: {
         presets: [
+          'es2015',
           'react',
           'stage-0',
           ['env', { targets: { browsers: ['last 2 versions'] } }]

@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
       This is our Homess
-      <button onClick={e => console.log('clickedsss')}> Click </button>
+      <button><Link to='/user'> Click </Link></button>
     </div>
   )
 }
