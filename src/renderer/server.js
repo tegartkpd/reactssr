@@ -1,8 +1,8 @@
 import 'babel-polyfill'
 import express from 'express'
-import serverRender from './serverRender'
+import serverRender from './serverRenderer'
 import createStore from '../store/createStore'
-import { getInitialData } from '../Routes'
+import { getInitialData } from '../routes'
 
 const app = express()
 const port = '3000'
@@ -23,7 +23,7 @@ app.get('*', (req, res) => {
   const promises = getInitialData(path, store)
 
   Promise.all(promises).then(() => {
-    res.send(serverRender(path, store))
+    res.send(serverRender(path, store)).status(200)
   })
 })
 

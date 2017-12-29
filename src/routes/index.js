@@ -1,7 +1,7 @@
 import React from 'react'
 import { renderRoutes, matchRoutes } from 'react-router-config'
-import Home from './client/components/Home'
-import User, { loadData } from './client/components/User'
+import Home from './components/Home'
+import User, { loadData } from './components/User'
 
 const routes = [
   {

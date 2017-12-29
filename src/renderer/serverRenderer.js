@@ -3,7 +3,7 @@ import serialize from 'serialize-javascript'
 import { renderToString } from 'react-dom/server'
 import { Provider } from 'react-redux'
 import { StaticRouter } from 'react-router-dom'
-import renderRoutes from '../Routes'
+import renderRoutes from '../routes'
 
 export default (path, store) => {
   const content = renderToString(

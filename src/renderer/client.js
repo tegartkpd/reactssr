@@ -3,7 +3,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import renderRoutes from '../Routes'
+import renderRoutes from '../routes'
 import { createClientStore } from '../store/createStore'
 
 ReactDom.hydrate(
